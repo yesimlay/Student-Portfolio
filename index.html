@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #224741a8;
+        }
+
+        .navbar {
+            background-color:rgb(62, 79, 80);
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .navbar a {
+            color: rgb(169, 188, 218);
+            background-color: rgb(41, 39, 122);
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s;
+            padding: 5px;
+        }
+
+        .navbar a:hover {
+            transform: scale(1.1);   
+   
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+        }
+
+        .card {
+            background: rgb(102, 139, 175);
+            width: 400px;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(30, 40, 48, 0.2);
+            margin: 40px;
+            margin-top: 100px;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 4px solid rgb(12, 28, 41);
+        }
+
+        h2 {
+            margin: 10px 0;
+            color: rgb(3, 25, 80)
+        }
+
+        .info { 
+            margin: 10px;
+            font-size: 15px;
+            color: rgb(29, 32, 48);
+            height: 5vh;
+            font-weight: lighter;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="navbar">
+    <a href="index.html">Profile</a>
+    <a href="index (2).html"> About me </a>
+    <a href="#">Projects</a>
+</div>
+
+<div class="container" id="profile">
+    <div class="card">
+
+        <img src="myprofile.jpg" alt="my profile pic" class="profile-img">
+
+        <h2>Lay De Guzman Lumawod</h2>
+
+        <div class="info">
+            Bachelor of Science Major in Computer Science
+        </div>
+
+        <div class="info">
+            CvSU Silang Campus
+        </div>
+
+        <div class="info">
+            Student No: 251100891
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
