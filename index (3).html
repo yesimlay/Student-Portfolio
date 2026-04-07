@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects / Portfolio</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #224741a8;
+        margin: 0;
+    }
+    .navbar {
+        background-color: rgb(62, 79, 80);
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    .navbar a {
+        color: rgb(169, 188, 218);
+        background-color: rgb(41, 39, 122);
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: transform 0.3s;
+        padding: 5px;
+    }
+
+    .navbar a:hover {
+        transform: scale(1.1);
+    }
+    .container {
+        max-width: 900px;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .box {
+        background: rgb(102, 139, 175);
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        padding: 20px;
+        text-align: center;
+    }
+    .box h2 {
+        color: rgb(28, 37, 35);
+        margin-bottom: 10px;
+    }
+    .box img {
+        width: 300px;
+        margin: 10px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        cursor: pointer;
+        transition: transform 0.3s;
+    }
+
+    .box img:hover {
+        transform: scale(1.05);
+    }
+</style>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="index.html">Profile</a>
+    <a href="index (2).html">About me</a>
+    <a href="index (3).html">Dashboard</a>
+    <a href="index (4).html">Quiz Upload</a>
+    <a href="index (5).html">Lab Upload</a>
+    <a href="index (6).html">Major Exam Upload</a>
+</div>
+
+<div class="container">
+
+    <div class="box">
+        <h2>Quiz Scores</h2>
+        <p>Quiz 1 - <span style="color: rgba(206, 46, 46, 0.904); font-size: 20px;">15/20</span></p>
+        <img src="quiz1.jpg" alt="Quiz 1 Photo">
+
+        <p>Quiz 2 - <span style="color: rgba(206, 46, 46, 0.904); font-size: 20px;">13/20</span></p>
+        <img src="quiz2.jpg" alt="Quiz 2 Photo">
+
+        <p>Quiz 3 - <span style="color: rgba(206, 46, 46, 0.904); font-size: 20px;">4/20</span></p>
+        <img src="quiz3.jpg" alt="Quiz 3 Photo">
+        <h2> Total of Quiz </h2>
+        <p style="font-size: 30px; color: red;"> 3</p>
+        
+    </div>
+
+    <div class="box">
+        <h2>Activity Scores</h2>
+        <p>Activity 1 - <span style="color: rgba(206, 46, 46, 0.904); font-size: 20px;">50</span></p>
+        <img src="activity1.jpg" alt="Activity 1">
+        <h2> Total of Activity </h2>
+        <p style="font-size: 30px; color: red;"> 1</p>
+    </div>
+</body>
+</html>
