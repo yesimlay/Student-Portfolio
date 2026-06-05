@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Carousel</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #224741a8;
+    font-family: Arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    max-width: 900px;
+    width: 50%;
+    background: rgb(102, 139, 175);
+    border-radius: 2rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.top-btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background: #1f41a0;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #051329;
+    margin-bottom: 1.8rem;
+    font-weight: 500;
+    font-size: 50px;
+    font-family: Tahoma;
+}
+
+p {
+    color: #1f425a;
+    margin-bottom: 1.8rem;
+    font-weight: 300;
+    font-size: 30px;
+    font-family: Tahoma;
+}
+
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    scroll-snap-type: x mandatory;
+    padding: 0 15%;
+    scroll-behavior: smooth;
+}
+
+
+.carousel::-webkit-scrollbar {
+    height: 10px;
+}
+
+.carousel::-webkit-scrollbar-track {
+    background: #586cad;
+    border-radius: 20px;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+    background: #cfcfd1;
+    border-radius: 20px;
+}
+
+.carousel {
+    scrollbar-width: auto; /* Firefox */
+}
+
+.carousel-item {
+    flex: 0 0 70%;
+    height: 250px;
+
+    scroll-snap-align: center;
+
+    border-radius: 1rem;
+    overflow: hidden;
+    border: 3px solid #0b1c3a;
+
+    background: #1f41a0;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.buttons {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.buttons button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    background: #1f41a0;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buttons button:hover {
+    transform: scale(1.1);
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<a class="top-btn" href="index (5).html">Go to Lab Work</a>
+
+<h2>My Carousel</h2>
+<p>League of Legends Champions</p>
+
+<div class="carousel" id="carousel">
+
+    <div class="carousel-item" id="illaoi">
+        <img src="illaoi.jpg">
+    </div>
+
+    <div class="carousel-item" id="shaco">
+        <img src="shaco.jpg">
+    </div>
+
+    <div class="carousel-item" id="kaisa">
+        <img src="kaisa.jpg">
+    </div>
+
+    <div class="carousel-item" id="teemo">
+        <img src="teemo.jpg">
+    </div>
+
+    <div class="carousel-item" id="camille">
+        <img src="camille.jpg">
+    </div>
+
+    <div class="carousel-item" id="neeko">
+        <img src="neeko.jpg">
+    </div>
+
+</div>
+
+<div class="buttons">
+
+    <button onclick="scrollToCard('illaoi')">Illaoi</button>
+    <button onclick="scrollToCard('shaco')">Shaco</button>
+    <button onclick="scrollToCard('kaisa')">Kai'Sa</button>
+    <button onclick="scrollToCard('teemo')">Teemo</button>
+    <button onclick="scrollToCard('camille')">Camille</button>
+    <button onclick="scrollToCard('neeko')">Neeko</button>
+
+</div>
+
+</div>
+
+<script>
+function scrollToCard(id) {
+    document.getElementById(id).scrollIntoView({
+        behavior: "smooth",
+        inline: "center",
+        block: "nearest"
+    });
+}
+</script>
+
+</body>
+</html>
