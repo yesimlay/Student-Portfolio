@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Me</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #224741a8;
+            margin: 0;
+        }
+
+        .navbar{
+            background-color: rgb(62, 79, 80);
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .navbar a{
+            color: rgb(169, 188, 218);
+            background-color: rgb(41, 39, 122);
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            transition: 0.3s;
+        }
+
+        .navbar a:hover{
+            transform: scale(1.1);
+        }
+
+        .about-title{
+            background:#668baf;
+            width:900px;
+            max-width:95%;
+            margin:30px auto 20px;
+            padding:20px;
+            border-radius:15px;
+            text-align:center;
+            box-shadow:0 5px 10px rgba(0,0,0,0.2);
+        }
+
+        .about-title h1{
+            margin:0;
+            font-size:50px;
+            color:#101929;
+        }
+
+        .container{
+            max-width:1200px;
+            margin:20px auto;
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:center;
+            gap:20px;
+        }
+
+        .box{
+            background:rgb(102,139,175);
+            border-radius:15px;
+            box-shadow:0 4px 10px rgba(0,0,0,0.2);
+            padding:20px;
+            width:250px;
+            text-align:center;
+            transition:0.3s;
+        }
+
+        .box:hover{
+            transform:translateY(-5px);
+        }
+
+        .box h3{
+            color:#1c2523;
+            margin-bottom:15px;
+        }
+
+        .box p{
+            color:#0b3d46;
+            font-size:16px;
+        }
+
+        .box img{
+            width:100%;
+            border-radius:10px;
+            transition:0.3s;
+        }
+
+        .box img:hover{
+            transform:scale(1.05);
+        }
+
+        .hobby{
+            font-size:35px;
+        }
+
+        .map-img{
+            width:180px !important;
+            height:180px;
+            margin-top:10px;
+        }
+
+        .profile-img{
+            height:320px;
+            object-fit:cover;
+        }
+
+        .social-box{
+            background:#668baf;
+            width:900px;
+            max-width:95%;
+            margin:20px auto 40px;
+            padding:25px;
+            border-radius:15px;
+            text-align:center;
+            box-shadow:0 5px 10px rgba(0,0,0,0.2);
+        }
+
+        .social-box h2{
+            color:#101929;
+            margin-bottom:20px;
+        }
+
+        .social-links{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            gap:25px;
+            flex-wrap:wrap;
+        }
+
+        .social-links img{
+            width:100px;
+            height:100px;
+            object-fit:contain;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="navbar">
+    <a href="index.html">Profile</a>
+    <a href="index (2).html">About me</a>
+    <a href="index (4).html">Quiz</a>
+    <a href="index (5).html">Lab Work</a>
+    <a href="index (6).html">Major Exam</a>
+</div>
+
+<div class="about-title">
+    <h1>About Me</h1>
+</div>
+
+<div class="container">
+
+    <div class="box">
+        <h3>Age</h3>
+        <p>22 Years Old</p>
+    </div>
+
+    <div class="box">
+        <h3>Birthday & Zodiac Sign</h3>
+        <p>July 20, 2003</p>
+        <p>Leo ♌</p>
+    </div>
+
+    <div class="box">
+        <h3>Hobbies</h3>
+        <p class="hobby">🎮 🛌 👨🏽‍💻</p>
+    </div>
+
+    <div class="box">
+        <h3>Contact Number</h3>
+        <p style="font-size:35px;">📞</p>
+        <p>09918848394</p>
+    </div>
+
+    <div class="box">
+        <h3>My Address</h3>
+        <p>Sampaloc II, Dasmariñas, Cavite</p>
+
+        <a href="https://maps.app.goo.gl/vbjdJeS9gxP76fHC7" target="_blank">
+            <img src="map.jpg" alt="Map" class="map-img">
+        </a>
+    </div>
+
+    <div class="box">
+        <h3>My Photo</h3>
+        <img src="selfie.jpg" alt="My Photo" class="profile-img">
+    </div>
+
+</div>
+
+<div class="social-box">
+
+    <h2>Social Media Accounts</h2>
+
+    <div class="social-links">
+
+        <a href="https://web.facebook.com/lay.de.guzman.lumawod" target="_blank">
+            <img src="facebook.jpg" alt="Facebook">
+        </a>
+
+        <a href="https://www.youtube.com/@laylumawod2405" target="_blank">
+            <img src="youtube.jpg" alt="YouTube">
+        </a>
+
+        <a href="https://www.instagram.com/yesim_lay" target="_blank">
+            <img src="instagram.jpg" alt="Instagram">
+        </a>
+
+        <a href="https://www.tiktok.com/@laylumawod?is_from_webapp=1&sender_device=pc" target="_blank">
+            <img src="tiktok.jpg" alt="TikTok">
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>
